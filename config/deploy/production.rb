@@ -31,7 +31,7 @@ server '107.170.105.88', user: 'joebuhlig', roles: %w{app db web}, port: 22
 # http://capistranorb.com/documentation/getting-started/configuration/
 # Feel free to add new variables to customise your setup.
 
-set :deploy_to, '/var/www/home'
+set :deploy_to, '/home/rails'
 set :use_sudo, true
 set :ssh_options, {:forward_agent => true}
 
