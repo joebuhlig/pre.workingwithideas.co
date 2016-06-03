@@ -5,7 +5,7 @@
 <!--[if IE 9 ]>    <html class="ie9 <%= @bodyId %>"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="<%= @bodyId %>"> <!--<![endif]-->
 <head>
-  <title>Harry&#8217;s &ndash; Tell Friends, Shave for Free</title>
+  <title>Working With Ideas - Create and launch something new</title>
   <link rel="icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
   <link rel="shortcut icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
 
@@ -21,6 +21,7 @@
     <% end %>
   <% end %>
   <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body id="<%= @bodyId %>">

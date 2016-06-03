@@ -16,7 +16,7 @@ class UsersController < ApplicationController
   def create
     ref_code = cookies[:h_ref]
     email = params[:user][:email]
-    @user = User.new(email: email)
+    @user = User.find_by_email(email) || User.new(email: email)
     @user.referrer = User.find_by_referral_code(ref_code) if ref_code
 
     if @user.save

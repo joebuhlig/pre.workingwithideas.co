@@ -15,32 +15,109 @@ class User < ActiveRecord::Base
 
   REFERRAL_STEPS = [
     {
+      'count' => 0,
+      'html' => '$12',
+      'class' => 'zero'
+    },
+    {
+      'count' => 1,
+      'html' => '$15',
+      'class' => 'one'
+    },
+    {
+      'count' => 2,
+      'html' => '$18',
+      'class' => 'two'
+    },
+    {
+      'count' => 3,
+      'html' => '$21',
+      'class' => 'three'
+    },
+    {
+      'count' => 4,
+      'html' => '$24',
+      'class' => 'four'
+    },
+    {
       'count' => 5,
-      'html' => 'Shave<br>Cream',
-      'class' => 'two',
-      'image' =>  ActionController::Base.helpers.asset_path(
-        'refer/cream-tooltip@2x.png')
+      'html' => '$27',
+      'class' => 'five guideline'
+    },
+    {
+      'count' => 6,
+      'html' => '$30',
+      'class' => 'six'
+    },
+    {
+      'count' => 7,
+      'html' => '$33',
+      'class' => 'seven'
+    },
+    {
+      'count' => 8,
+      'html' => '$36',
+      'class' => 'eight'
+    },
+    {
+      'count' => 9,
+      'html' => '$39',
+      'class' => 'nine'
     },
     {
       'count' => 10,
-      'html' => 'Truman Handle<br>w/ Blade',
-      'class' => 'three',
-      'image' => ActionController::Base.helpers.asset_path(
-        'refer/truman@2x.png')
+      'html' => '$42',
+      'class' => 'ten guideline'
     },
     {
-      'count' => 25,
-      'html' => 'Winston<br>Shave Set',
-      'class' => 'four',
-      'image' => ActionController::Base.helpers.asset_path(
-        'refer/winston@2x.png')
+      'count' => 11,
+      'html' => '$45',
+      'class' => 'eleven'
     },
     {
-      'count' => 50,
-      'html' => 'One Year<br>Free Blades',
-      'class' => 'five',
-      'image' => ActionController::Base.helpers.asset_path(
-        'refer/blade-explain@2x.png')
+      'count' => 12,
+      'html' => '$48',
+      'class' => 'twelve'
+    },
+    {
+      'count' => 13,
+      'html' => '$51',
+      'class' => 'thirteen'
+    },
+    {
+      'count' => 14,
+      'html' => '$54',
+      'class' => 'fourteen'
+    },
+    {
+      'count' => 15,
+      'html' => '$57',
+      'class' => 'fifteen guideline'
+    },
+    {
+      'count' => 16,
+      'html' => '$60',
+      'class' => 'sixteen'
+    },
+    {
+      'count' => 17,
+      'html' => '$63',
+      'class' => 'seventeen'
+    },
+    {
+      'count' => 18,
+      'html' => '$66',
+      'class' => 'eighteen'
+    },
+    {
+      'count' => 19,
+      'html' => '$69',
+      'class' => 'nineteen'
+    },
+    {
+      'count' => 20,
+      'html' => 'FREE!',
+      'class' => 'twenty guideline'
     }
   ]
 
@@ -51,6 +128,6 @@ class User < ActiveRecord::Base
   end
 
   def send_welcome_email
-    UserMailer.delay.signup_email(self)
+    UserMailer.signup_email(self).deliver_now
   end
 end

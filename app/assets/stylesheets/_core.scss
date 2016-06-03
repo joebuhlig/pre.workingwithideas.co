@@ -1,3 +1,6 @@
+$brand-color: #E59400;
+$secondary-color: #555555;
+
 form{
 	margin-bottom: 0;
 }
@@ -17,10 +20,11 @@ form{
 
 html.home{
 	background: #EDECEA;
+	height: 100%
 }
 
 #home{
-	padding-bottom: 50px;
+	height:100%;
 }
 
 #home .page-content{
@@ -30,9 +34,8 @@ html.home{
 
 #home .hero{
 	width: 100%;
-	height: 446px;
-	background: image-url("home/hero.jpg") center center no-repeat;
-	background-size: 1600px 446px;
+	height: 100%;
+	background: image-url("home/hero.jpeg") center center no-repeat;
 	overflow: hidden;
 	position: relative;
 	letter-spacing: .09em;
@@ -41,33 +44,31 @@ html.home{
 
 #home .hero .large{
 	font-weight: bold;
-	font-size: 40px;
-	color: #074E6F;
-	text-transform: uppercase;
-	margin: 85px 0 0 136px;
-	position: relative;
+	font-size: 30px;
+	color: $brand-color;
 	z-index: 2;
 	letter-spacing: 2px;
+	text-align: center;
+	margin: 20px 0px;
 }
 
 #home .hero .small{
 	font-weight: bold;
-	color: #955F5D;
+	color: #FFFFFF;
 	font-size: 18px;
-	margin: 10px 0 0 115px;
 	line-height: 30px;
-	position: relative;
 	z-index: 2;
-	text-transform: uppercase;
-	text-align: center;
-	width: 375px;
 	letter-spacing: 1px;
+	text-align: center;
 }
 
 #home .form-wrap{
 	height: 80px;
-	width: 411px;
+	width: 380px;
 	margin: 23px auto 0;
+	position: fixed;
+	bottom: 50px;
+	left: calc(50% - 190px);
 }
 
 #home .form-wrap .key{
@@ -81,28 +82,50 @@ html.home{
 #home .form-wrap .byline{
 	font-size: 15px;
 	text-transform: uppercase;
-	color: #074E6F;
+	color: $brand-color;
 	text-align: center;
 	font-weight: bold;
 	letter-spacing: 2px;
-	margin: 15px 0;
+	margin: 0px 0px 15px 0;
+}
+
+#home .form-wrap .inquiry{
+	font-size: 12px;
+	color: $brand-color;
+	text-align: center;
+	margin-top: 60px;
+	cursor: pointer;
+	font-style: italic;
+}
+
+#home .form-wrap .inquiry-pop{
+	display: none;
+	position: fixed;
+	width: 100%;
+	max-width: 600px;
+	min-height: 200px;
+	background: #ffffff;
+	top: 50px;
+	left: calc(50% - 300px);
+	border-radius: 5px;
 }
 
 #home .form-wrap .email{
 	float: left;
 	font-size: 13px;
 	padding: 8px 0 8px 10px;
-	border: 1px solid #074E6F;
-	width: 256px;
+	border: 1px solid $brand-color;
+	border-radius: 0px;
+	width: 238px;
 	outline: none;
 	letter-spacing: 1px;
 }
 
 #home .form-wrap .submit{
-	width: 143px;
-	background: #074E6F;
+	width: 130px;
+	background: $brand-color;
 	float: left;
-	height: 37px;
+	height: 36px;
 	line-height: 37px;
 	color: #FFF;
 	font-size: 13px;
@@ -119,7 +142,7 @@ html.home{
 #home .form-wrap.ended .thanks{
 	text-transform: uppercase;
 	font-weight: 500;
-	color: #074e6f;
+	color: $brand-color;
 	text-align: center;
 	font-size: 22px;
 	letter-spacing: 1px;
@@ -147,7 +170,7 @@ html.home{
 }
 
 #home .form-wrap.ended .go-to a{
-	color: #074e6f;
+	color: $brand-color;
 	font-size: 19px;
 	font-weight:bold;
 	text-transform: uppercase;
@@ -156,7 +179,7 @@ html.home{
 }
 
 #home .form-wrap.ended .go-to a:hover{
-	color: #955F5D;
+	color: $secondary-color;
 }
 
 #home .form-wrap.ended .again{
@@ -175,7 +198,7 @@ html.home{
 #home .form-wrap.ended .thanks{
 	text-transform: uppercase;
 	font-weight: 500;
-	color: #074e6f;
+	color: $brand-color;
 	text-align: center;
 	font-size: 22px;
 	letter-spacing: 1px;
@@ -203,7 +226,7 @@ html.home{
 }
 
 #home .form-wrap.ended .go-to a{
-	color: #074e6f;
+	color: $brand-color;
 	font-size: 19px;
 	font-weight:bold;
 	text-transform: uppercase;
@@ -212,7 +235,7 @@ html.home{
 }
 
 #home .form-wrap.ended .go-to a:hover{
-	color: #955F5D;
+	color: $secondary-color;
 }
 
 #home .form-wrap.ended .again{
@@ -240,7 +263,7 @@ html.home{
 }
 
 #refer .page-content{
-	width: 1120px;
+	max-width: 1120px;
 	margin: 0 auto;
 	z-index: 0;
 	position: relative;
@@ -248,7 +271,7 @@ html.home{
 
 #refer .header{
 	height: 50px;
-	background: #074E6F;
+	background: $brand-color;
 	width: 100%;
 	overflow:hidden;
 	z-index: 1;
@@ -261,7 +284,7 @@ html.home{
 }
 
 #refer .header p{
-	float: left;
+	text-align: center;
 	color: #FFF;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -315,12 +338,11 @@ html.home{
 }
 
 #refer .share-wrap{
-	float: right;
 	width: 400px;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: .13em;
-	margin-right: 60px;
+	margin: 0px auto;
 }
 
 #refer .share-wrap .why{
@@ -335,7 +357,7 @@ html.home{
 	line-height: 40px;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #074E6F;
+	color: $brand-color;
 	margin-top: 18px;
 	letter-spacing: .13em;
 }
@@ -403,7 +425,7 @@ html.home{
 #refer .prizes .callout{
 	text-align: center;
 	font-size: 16px;
-	color: #074E6F;
+	color: $brand-color;
 	font-weight: bold;
 	margin: 20px 0 0 0;
 	letter-spacing: 2px;
@@ -451,13 +473,24 @@ html.home{
 #refer .prizes .products li.title{
 	height: 100%;
 	text-transform: uppercase;
-	color: #074E6F;
+	color: $brand-color;
 	font-weight: 500;
 	font-size: 14px;
 	float: left;
-	margin-right: 68px;
-	width: 165px;
+	width: 130px;
 	font-weight: bold;
+	
+	@media screen and (max-width: 1150px) {
+		float: none;
+		margin: 0px auto;
+		text-align: center;
+	}
+	.mobile{
+		color: $secondary-color;
+		@media screen and (min-width: 1150px) {
+			display: none;
+		}
+	}
 }
 
 #refer .prizes .products li.title .friends{
@@ -466,38 +499,52 @@ html.home{
 }
 
 #refer .prizes .products li.title .rewards{
-	margin-top: 45px;
+	margin-top: 35px;
 	letter-spacing: 2px;
 }
+#refer .prizes .products{
+	.guideline{
+		color: $brand-color;
 
+		.circle{
+			color: #868282;
+		}
+		p{
+			color: $brand-color;
+		}
+	}
+}
 #refer .prizes .products li.product{
 	height: 100%;
-	color: #074E6F;
-	width: 125px;
-	margin-right: 129px;
+	width: 46px;
+	color: #ffffff;
 	float: left;
 	position: relative;
+	@media screen and (max-width: 1150px) {
+		display: none;
+	}
 }
 
 #refer .prizes .products li.product .circle{
 	height: 30px;
 	width: 30px;
-	border-radius: 15px;
-	border: 1px solid #DAD9D2;
 	text-align: center;
 	line-height: 30px;
-	color: #868282;
 	overflow: hidden;
-	background: #F1F0EE;
 	font-weight: bold;
 	margin: 0 auto;
 }
 
 #refer .prizes .products li.product .sep{
-	width: 12px;
-	height: 2px;
-	background: transparent;
-	margin: 13px auto 13px;
+	height: 8px;
+	background: #dddddd;
+	border-right: 0px;
+	border-left: 0px;
+	margin: 11px 0px;
+}
+
+#refer .prizes .products li.product.selected .sep,#refer .prizes .products li.product.passed .sep{
+	background: $secondary-color;
 }
 
 #refer .prizes .products li.product .caret{
@@ -528,26 +575,20 @@ html.home{
 }
 
 #refer .prizes .products li.product.selected .circle{
-	background: #995F5E !important;
-	border-color: #995F5E !important;
+	background: $secondary-color !important;
+	border-color: $secondary-color !important;
 	color: #FFF !important;
 }
 
 
 #refer .prizes .products li.product.selected p{
-	color: #995F5E !important;
-}
-
-#refer .prizes .products li.product:hover .circle{
-	color: #FFF;
-	background: #074E6F;
-	border-color: #074E6F;
+	color: $secondary-color !important;
 }
 
 #refer .prizes .products li.product .tooltip{
 	height: 254px;
 	width: 190px;
-	border: 4px solid #074E6F;
+	border: 4px solid $brand-color;
 	position: absolute;
 	top: -285px;
 	left: -32px;
@@ -560,21 +601,17 @@ html.home{
 	display: block;
 }
 
-#refer .prizes .products li.product:hover .tooltip{
-	display: block;
-}
-
 #refer .prizes p.place{
 	text-align: center;
 	font-size: 16px;
-	color: #074E6F;
+	color: $brand-color;
 	width: 100%;
 	font-weight: 500;
 	margin-top: 30px;
 }
 
 #refer .prizes p.place span{
-	color: #995F5E;
+	color: $secondary-color;
 }
 
 #refer .prizes p.check{
@@ -605,109 +642,3 @@ html.home{
 	display: block;
 	text-decoration: none;
 }
-
-
-
-/*
-	RETINA
-*/
-@media only screen and (min--moz-device-pixel-ratio: 2),
-only screen and (-o-min-device-pixel-ratio: 2/1),
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-device-pixel-ratio: 2) {
-	#home .hero{
-		background: image-url("home/hero@2x.jpg") center center no-repeat;
-		background-size: 1600px 446px;
-	}
-
-	#home .form-wrap .key{
-		background: image-url("home/key@2x.png") 0 0 no-repeat;
-		background-size: 46px 19px;
-	}
-
-	#refer .header .logo{
-		background: image-url("refer/logo@2x.png") 0 0 no-repeat;
-		background-size: 106px 19px;
-	}
-
-	#refer .mammoth{
-		background: image-url("refer/mammoth@2x.png") 0 0 no-repeat;
-		background-size: 610px 394px;
-	}
-
-	#refer .share-wrap .social-links .fb{
-		background: image-url("refer/fb@2x.png");
-		background-size: 27px 27px;
-	}
-
-	#refer .share-wrap .social-links .twit{
-		background: image-url("refer/twit@2x.png");
-		background-size: 27px 27px;
-	}
-
-	#refer .prizes .progress{
-		background: image-url("refer/progress-bg@2x.png") 0 0 repeat-x;
-		background-size: 1px 4px;
-	}
-
-	#refer .prizes .progress .mover .bar{
-		background: image-url("refer/progress-done@2x.png") 0 0 repeat-x;
-		background-size: 1px 4px;
-	}
-
-	#refer .prizes .progress .mover .razor{
-		background: image-url("refer/razor@2x.png") 0 0 no-repeat;
-		background-size: 82px 23px;
-	}
-
-	#refer .prizes .products li.product .caret{
-		background: image-url("refer/caret@2x.png") center center no-repeat;
-		background-size: 16px 10px;
-	}
-
-	#refer .prizes .products li.product.selected .caret{
-		background: image-url("refer/caret-selected@2x.png") center center no-repeat;
-		background-size: 16px 10px;
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
