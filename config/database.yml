@@ -1,3 +1,8 @@
+default: &default
+  adapter: postgresql
+  host: 127.0.0.1
+  pool: 5
+  timeout: 5000
 development:
   adapter: postgresql
   database: prelaunchr_development
@@ -7,6 +12,7 @@ test:
   database: prelaunchr_test
   host: localhost
 production:
-  adapter: postgresql
+  <<: *default
   database: prelaunchr
-  host: localhost
+  username: rails
+  password: <%= ENV['APP_DATABASE_PASSWORD'] %>
