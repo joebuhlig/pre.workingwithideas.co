@@ -6,3 +6,7 @@ test:
   adapter: postgresql
   database: prelaunchr_test
   host: localhost
+production:
+  adapter: postgresql
+  database: prelaunchr
+  host: localhost
