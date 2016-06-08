@@ -4439,3 +4439,77 @@ Processing by UsersController#refer as HTML
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."referrer_id" = $1[0m  [["referrer_id", 11]]
   Rendered users/refer.html.erb within layouts/application (3.2ms)
 Completed 200 OK in 457ms (Views: 454.6ms | ActiveRecord: 0.6ms)
+Processing by UsersController#refer as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "jbuhlig@gmail.com"]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."referrer_id" = $1  [["referrer_id", 19]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."referrer_id" = $1[0m  [["referrer_id", 19]]
+  Rendered users/refer.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 3687ms (Views: 3652.0ms | ActiveRecord: 4.5ms)
+Processing by UsersController#new as HTML
+  Rendered users/_campaign_ended.html.erb (0.5ms)
+  Rendered users/new.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 175ms (Views: 173.7ms | ActiveRecord: 0.0ms)
+Processing by UsersController#new as HTML
+  Rendered users/_campaign_ended.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 94ms (Views: 92.9ms | ActiveRecord: 0.0ms)
+Processing by UsersController#new as HTML
+  Rendered users/_campaign_ended.html.erb (0.5ms)
+  Rendered users/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 461ms (Views: 460.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#new as HTML
+  Rendered users/_campaign_ended.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 382ms (Views: 381.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#new as HTML
+  Rendered users/_campaign_ended.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 80ms (Views: 79.8ms | ActiveRecord: 0.0ms)
+Processing by UsersController#new as HTML
+  Rendered users/_campaign_ended.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 80ms (Views: 78.9ms | ActiveRecord: 0.0ms)
+Processing by UsersController#new as HTML
+  Rendered users/_campaign_ended.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 446ms (Views: 444.6ms | ActiveRecord: 0.0ms)
+Processing by UsersController#new as HTML
+  Rendered users/_campaign_ended.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 405ms (Views: 403.6ms | ActiveRecord: 0.0ms)
+Processing by UsersController#new as HTML
+  Rendered users/_campaign_ended.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 391ms (Views: 380.9ms | ActiveRecord: 0.0ms)
+Processing by UsersController#new as HTML
+  Rendered users/_campaign_ended.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 421ms (Views: 420.2ms | ActiveRecord: 0.0ms)
+Processing by UsersController#new as HTML
+  Rendered users/_campaign_ended.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 76ms (Views: 75.0ms | ActiveRecord: 0.0ms)
+Processing by UsersController#new as HTML
+  Rendered users/_campaign_ended.html.erb (0.3ms)
+  Rendered users/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 77ms (Views: 76.2ms | ActiveRecord: 0.0ms)
+Processing by UsersController#new as HTML
+  Rendered users/_campaign_ended.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 420ms (Views: 418.4ms | ActiveRecord: 0.0ms)
+Processing by UsersController#new as HTML
+  Rendered users/_campaign_ended.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 79ms (Views: 78.8ms | ActiveRecord: 0.0ms)
+Processing by UsersController#new as HTML
+  Rendered users/_campaign_ended.html.erb (0.3ms)
+  Rendered users/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 70ms (Views: 69.4ms | ActiveRecord: 0.0ms)
+Processing by UsersController#new as HTML
+  Rendered users/_campaign_ended.html.erb (0.2ms)
+  Rendered users/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 411ms (Views: 409.9ms | ActiveRecord: 0.0ms)
+Processing by UsersController#new as HTML
+  Rendered users/_campaign_ended.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 458ms (Views: 456.8ms | ActiveRecord: 0.0ms)

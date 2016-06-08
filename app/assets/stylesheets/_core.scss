@@ -153,8 +153,13 @@ html.home{
 }
 
 #home .form-wrap.ended{
-	width: 500px;
-	margin-top: 27px;
+	max-width: 500px;
+	bottom: 110px;
+	left: calc(50% - 250px);
+
+	@media screen and (max-width: 500px) {
+		left: 0px;
+	}
 }
 
 #home .form-wrap.ended .thanks{
@@ -162,10 +167,10 @@ html.home{
 	font-weight: 500;
 	color: $brand-color;
 	text-align: center;
-	font-size: 22px;
+	font-size: 18px;
 	letter-spacing: 1px;
 	line-height: 36px;
-	margin-bottom: 14px;
+	margin-bottom: 0px;
 }
 
 #home .form-wrap.ended .compiling{
@@ -173,10 +178,10 @@ html.home{
 	letter-spacing: 1px;
 	font-size: 14px;
 	line-height: 30px;
-	color: #555556;
+	color: #ffffff;
 	text-align: center;
 	font-weight: 500;
-	margin-bottom: 24px;
+	margin-bottom: 14px;
 }
 
 #home .form-wrap.ended .go-to{
@@ -185,12 +190,12 @@ html.home{
 	letter-spacing: 1px;
 	text-align: center;
 	margin-bottom: 25px;
+	color: #ffffff;
 }
 
 #home .form-wrap.ended .go-to a{
 	color: $brand-color;
 	font-size: 19px;
-	font-weight:bold;
 	text-transform: uppercase;
 	font-style: normal;
 	text-decoration: none;
@@ -202,7 +207,7 @@ html.home{
 
 #home .form-wrap.ended .again{
 	font-weight: 500;
-	color: #555556;
+	color: #FFFFFF;
 	text-transform: uppercase;
 	font-size: 14px;
 	text-align: center;
@@ -212,58 +217,6 @@ html.home{
 	width: 500px;
 	margin-top: 27px;
 }
-
-#home .form-wrap.ended .thanks{
-	text-transform: uppercase;
-	font-weight: 500;
-	color: $brand-color;
-	text-align: center;
-	font-size: 22px;
-	letter-spacing: 1px;
-	line-height: 36px;
-	margin-bottom: 14px;
-}
-
-#home .form-wrap.ended .compiling{
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-size: 14px;
-	line-height: 30px;
-	color: #555556;
-	text-align: center;
-	font-weight: 500;
-	margin-bottom: 24px;
-}
-
-#home .form-wrap.ended .go-to{
-	font-style: italic;
-	font-size: 16px;
-	letter-spacing: 1px;
-	text-align: center;
-	margin-bottom: 25px;
-}
-
-#home .form-wrap.ended .go-to a{
-	color: $brand-color;
-	font-size: 19px;
-	font-weight:bold;
-	text-transform: uppercase;
-	font-style: normal;
-	text-decoration: none;
-}
-
-#home .form-wrap.ended .go-to a:hover{
-	color: $secondary-color;
-}
-
-#home .form-wrap.ended .again{
-	font-weight: 500;
-	color: #555556;
-	text-transform: uppercase;
-	font-size: 14px;
-	text-align: center;
-}
-
 
 
 /* Refer a friend page */
@@ -328,7 +281,7 @@ html.home{
 
 #refer .hero{
 	background: image-url("refer/refer-hero.jpg") center center no-repeat;
-	height: 391px;
+	height: 350px;
 	overflow: hidden;
 }
 
@@ -437,13 +390,14 @@ html.home{
 	width: 1px;
 	background: #BAB9BA;
 	margin: 0 20px;
+	vertical-align: middle;
 }
 
 #refer .prizes{
 	width: 100%;
 	background: #FFF;
 	border-top: 1px solid #D2D1C8;
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 }
 
 #refer .prizes .page-content{
@@ -684,4 +638,10 @@ html.home{
 	left: 0; 
 	width: 100%; 
 	height: 100%; 
+}
+.icon > svg {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
 }
