@@ -1,8 +1,10 @@
 $(document).ready(function(){
 	$(".inquiry").click(function(){
 		$(".inquiry-pop").fadeIn();
+		$(".popup-background").fadeIn();
 	})
-	$(".hero").click(function(){
+	$(".popup-background").click(function(){
 		$(".inquiry-pop").fadeOut();
+		$(".popup-background").fadeOut();
 	})
 })
