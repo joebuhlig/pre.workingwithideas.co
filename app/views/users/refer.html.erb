@@ -18,6 +18,7 @@
         <div class="sep"></div>
         <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a>
       </div>
+      <div class="share-background"></div>
     </div>
   </div>
 </div>
@@ -45,7 +46,7 @@
 %>
 <div class="prizes <% if found %>prize-<%= found["class"] %><% end %>">
   <div class="page-content">
-    <p class="callout brandon">Here's How It Works:</p>
+    <p class="callout brandon">Your Numbers:</p>
     <ul class="products clearfix">
       <li class="title brandon"><p class="friends">Friends:<span class="mobile"> <%= @user.referrals.count %></span></p><p class="rewards">Discount:<span class="mobile"> <%= found["html"].html_safe %></span></p></li>
       <% stops.each do |stop| %>

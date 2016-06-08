@@ -327,7 +327,7 @@ html.home{
 }
 
 #refer .hero{
-	background: #F1F0EE;
+	background: image-url("refer/refer-hero.jpg") center center no-repeat;
 	height: 391px;
 	overflow: hidden;
 }
@@ -356,16 +356,26 @@ html.home{
 }
 
 #refer .share-wrap{
-	width: 400px;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: .13em;
 	margin: 0px auto;
+	max-width: 600px;
+}
+
+#refer .share-background{
+	position: relative;
+    height: 450px;
+    width: 100%;
+    background-color: #787878;
+    opacity: 0.8;
+    top: -350px;
+    z-index: -1;
 }
 
 #refer .share-wrap .why{
 	font-size: 16px;
-	color: #555556;
+	color: #FFFFFF;
 	font-weight: bold;
 	margin-top: 42px;
 }
@@ -381,7 +391,7 @@ html.home{
 }
 
 #refer .share-wrap .subtitle{
-	color: #565656;
+	color: #FFFFFF;
 	font-size: 14px;
 	text-transform: none;
 	margin-top: 15px;
