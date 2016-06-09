@@ -60,8 +60,21 @@ Prelaunchr::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+# For mailer configs
+  config.action_mailer.smtp_settings = { 
+    domain: 'pre.workingwithideas.com', 
+    authentication: :plain, 
+    enable_starttls_auto: true, 
+    address: 'smtp.mandrillapp.com', 
+    port: 587, 
+    user_name: 'joe@joebuhlig.com',
+    password: 'Dqp0OdN0hF9ZH0T0hmmT_w' }
 
-  config.action_mailer.default_url_options = { :host => "workingwithideas.co" }
+  config.action_mailer.delivery_method = :smtp
+  # change to true to allow email to be sent during development
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.default :charset => "utf-8"
+  config.action_mailer.default_url_options = { :host => "pre.workingwithideas.co" }
 
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
