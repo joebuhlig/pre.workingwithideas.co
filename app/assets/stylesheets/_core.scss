@@ -1,5 +1,10 @@
-$brand-color: #E59400;
+$brand-color: #cc4825;
 $secondary-color: #555555;
+
+@font-face {
+	font-family: Estandar;
+	src: font-url('Estandar-Regular.woff') format('woff'), font-url('Estandar-Regular.ttf') format("truetype");
+}
 
 form{
 	margin-bottom: 0;
@@ -13,6 +18,10 @@ form{
 
 .clearfix:after {
     clear: both;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 
@@ -40,6 +49,10 @@ html.home{
 	position: relative;
 	letter-spacing: .09em;
 	margin: 0 auto;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #home .hero .large{
@@ -82,7 +95,7 @@ html.home{
 #home .form-wrap .byline{
 	font-size: 15px;
 	text-transform: uppercase;
-	color: $brand-color;
+	color: #fff;
 	text-align: center;
 	font-weight: bold;
 	letter-spacing: 2px;
@@ -97,23 +110,11 @@ html.home{
 	cursor: pointer;
 	font-style: italic;
 }
-
-#home .form-wrap .inquiry-pop{
-	display: none;
-	position: fixed;
-	width: 100%;
-	max-width: 600px;
-	min-height: 200px;
-	background: #ffffff;
-	top: 50px;
-	left: calc(50% - 300px);
-	z-index:101;
-
-	@media screen and (max-width: 600px) {
-		left: 0px;
-	}
-
+#home .form-wrap .inquiry a{
+	color: $brand-color;
+	text-decoration: none;
 }
+
 #home .form-wrap .popup-background{
 	background-color: #787878;
 	opacity: 0.7;
@@ -226,7 +227,7 @@ html.home{
 }
 
 .brandon{
-	font-family: "Brandon Grotesque", "brandon-grotesque", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+	font-family: Estandar, "HelveticaNeue", "Helvetica", "Arial", sans-serif;
 }
 
 #refer{
@@ -258,8 +259,8 @@ html.home{
 	text-align: center;
 	color: #FFF;
 	font-weight: 500;
-	text-transform: uppercase;
 	line-height: 50px;
+	font-size: 28px;
 }
 
 #refer .header .byline{
@@ -310,7 +311,6 @@ html.home{
 
 #refer .share-wrap{
 	text-align: center;
-	text-transform: uppercase;
 	letter-spacing: .13em;
 	margin: 0px auto;
 	max-width: 600px;
@@ -338,7 +338,7 @@ html.home{
 	line-height: 40px;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: $brand-color;
+	color: #fff;
 	margin-top: 18px;
 	letter-spacing: .13em;
 }
