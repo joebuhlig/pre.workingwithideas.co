@@ -53,6 +53,6 @@ module Prelaunchr
     config.assets.version = '1.0'
 
     # decides whether the prelaunch campaign has ended or not
-    config.ended = false
+    config.ended = true
   end
 end

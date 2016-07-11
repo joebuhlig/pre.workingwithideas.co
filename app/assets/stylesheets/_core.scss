@@ -155,12 +155,7 @@ html.home{
 
 #home .form-wrap.ended{
 	max-width: 500px;
-	bottom: 110px;
-	left: calc(50% - 250px);
-
-	@media screen and (max-width: 500px) {
-		left: 0px;
-	}
+	bottom: 125px;
 }
 
 #home .form-wrap.ended .thanks{
@@ -212,11 +207,6 @@ html.home{
 	text-transform: uppercase;
 	font-size: 14px;
 	text-align: center;
-}
-
-#home .form-wrap.ended{
-	width: 500px;
-	margin-top: 27px;
 }
 
 
